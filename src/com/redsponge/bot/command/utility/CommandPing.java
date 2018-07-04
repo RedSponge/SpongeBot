@@ -1,6 +1,9 @@
-package com.redsponge.bot.command;
+package com.redsponge.bot.command.utility;
 
 import com.redsponge.bot.SpongeBot;
+import com.redsponge.bot.command.CommandCategory;
+import com.redsponge.bot.command.ICommand;
+import com.redsponge.bot.command.Permission;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.Message;
@@ -38,7 +41,22 @@ public class CommandPing implements ICommand {
     }
 
     @Override
-    public String name() {
+    public CommandCategory getCategory() {
+        return CommandCategory.UTILITY;
+    }
+
+    @Override
+    public String getName() {
         return "ping";
+    }
+
+    @Override
+    public String getDescription() {
+        return "Pong! Shows latency.";
+    }
+
+    @Override
+    public Permission getPermission() {
+        return Permission.USER;
     }
 }
