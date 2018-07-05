@@ -27,6 +27,8 @@ public class Commands {
 
     public static final ICommand CommandId = new CommandId();
     public static final ICommand CommandPing = new CommandPing();
+    
+    public static final ICommand CommandDice = new CommandDice();
 
     public static final List<ICommand> ALL;
 
