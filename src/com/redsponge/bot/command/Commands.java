@@ -6,6 +6,7 @@ import com.redsponge.bot.command.fun.CommandSay;
 import com.redsponge.bot.command.general.CommandHelp;
 import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
 import com.redsponge.bot.command.general.CommandServers;
+import com.redsponge.bot.command.music.CommandPlay;
 import com.redsponge.bot.command.utility.CommandId;
 import com.redsponge.bot.command.utility.CommandPing;
 

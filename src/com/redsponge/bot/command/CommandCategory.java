@@ -2,10 +2,11 @@ package com.redsponge.bot.command;
 
 public enum CommandCategory {
 
-    GENERAL("General", ":gem:"),
+    GENERAL("General", ":popcorn:"),
     UTILITY("Utility", ":gear:"),
     FUN("Fun", ":smile:"),
     DEV("Dev", "", false),
+    MUSIC("Music", ":musical_note:"),
     CHAT("Chat", ":speech_left:");
 
     private String title;

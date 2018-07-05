@@ -16,6 +16,10 @@ import com.redsponge.bot.event.ServerListeners;
 import com.redsponge.bot.role.RoleContainer;
 import com.redsponge.bot.role.Roles;
 import com.redsponge.bot.util.Reference;
+import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
+import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
+import com.sedmelluq.discord.lavaplayer.source.AudioSourceManager;
+import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
@@ -29,13 +33,18 @@ public class SpongeBot {
 
     public JDA jda;
     public CommandManager commandManager;
+    public AudioPlayerManager audioPlayerManager;
 
     public static SpongeBot instance;
 
     public SpongeBot() {
         instance = this;
+        HerokuServerHandler.createHandler();
         try {
             JDABuilder builder = new JDABuilder(AccountType.BOT).setToken(Reference.TOKEN);
+
+            audioPlayerManager = new DefaultAudioPlayerManager();
+            AudioSourceManagers.registerRemoteSources(audioPlayerManager);
 
             registerCommands();
             registerEvents(builder);

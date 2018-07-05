@@ -59,7 +59,7 @@ public class CommandDeleteMessages implements ICommand {
     }
 
     @Override
-    public String[] usages() {
+    public String[] getUsages() {
         return new String[] {"deleteMessages [number]"};
     }
 

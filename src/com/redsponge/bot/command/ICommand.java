@@ -16,7 +16,7 @@ public interface ICommand {
 
     String getDescription();
 
-    default String[] usages() {
+    default String[] getUsages() {
         return new String[] {getName()};
     }
 
@@ -30,7 +30,7 @@ public interface ICommand {
 
     default String[] getAliases() {return new String[0];}
 
-    default String[] getUsages() {
+    default String[] formUsages() {
         List<String> ar = new ArrayList<>(Collections.singletonList(getName()));
         ar.addAll(Arrays.asList(getAliases()));
         return ar.toArray(new String[0]);

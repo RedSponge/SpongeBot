@@ -74,8 +74,8 @@ public class CommandHelp implements ICommand {
 
         builder.addField("Name:", command.getName(), false);
         builder.addField("Description: ", command.getDescription(), false);
-        builder.addField("Usage:", "`" + Reference.prefix + String.join(" || " + Reference.prefix,command.usages()) + "`", false);
-        builder.addField("Aliases: ", String.join(", ", command.getUsages()), false);
+        builder.addField("Usage:", "`" + Reference.prefix + String.join(" || " + Reference.prefix,command.getUsages()) + "`", false);
+        builder.addField("Aliases: ", String.join(", ", command.formUsages()), false);
 
     }
 
@@ -90,7 +90,7 @@ public class CommandHelp implements ICommand {
     }
 
     @Override
-    public String[] usages() {
+    public String[] getUsages() {
         return new String[] {getName(), "help [getCategory]", "help [command]"};
     }
 
