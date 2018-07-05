@@ -7,43 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d658f14-92aa-4563-ad79-3f406a7a6e34" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpongeBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpongeBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/JDA-3.6.0_354-withDependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/apache-commons.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lavaplayer-1.3.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lavaplayer-common-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lavaplayer-natives-1.2.55.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/HerokuServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/HerokuServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/Ping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/Ping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/SpongeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/CommandCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/UnknownCommandException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/UnknownCommandException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/chat/CommandDeleteMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/chat/CommandDeleteMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/fun/CommandDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandDice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/fun/CommandQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/fun/CommandSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandSay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/general/CommandHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/general/CommandServers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandServers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/music/CommandPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/music/CommandPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/utility/CommandId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/command/utility/CommandPing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandPing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/event/OnMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/event/ServerListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/ServerListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/music/AudioEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/music/AudioEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/music/AudioPlayerSendHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/music/AudioPlayerSendHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/role/RoleContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/role/RoleContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/role/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/role/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/redsponge/bot/util/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,11 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="39" selection-start-column="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -212,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/com/redsponge/bot/command/fun/CommandDice.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -273,6 +248,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpongeBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpongeBot" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -473,13 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -825,6 +798,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
