@@ -6,7 +6,7 @@ public enum CommandCategory {
     UTILITY("Utility", ":gear:"),
     FUN("Fun", ":smile:"),
     DEV("Dev", "", false),
-    MUSIC("Music", ":musical_note:"),
+    MUSIC("Music", ":musical_note:", false),
     CHAT("Chat", ":speech_left:");
 
     private String title;
