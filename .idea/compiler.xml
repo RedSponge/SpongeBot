@@ -9,8 +9,5 @@
         <module name="SpongeBot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SpongeBot" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

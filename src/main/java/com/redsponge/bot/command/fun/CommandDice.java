@@ -41,6 +41,10 @@ public class CommandDice implements ICommand {
             event.getChannel().sendMessage("Cannot roll more than " + rollCap + " times").queue();
             return;
         }
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
+        System.out.println("Rolls: " + rolls);
+        System.out.println("Randomify: " + r.nextInt(max));
         for(int i = 0; i < rolls; i++) {
             event.getChannel().sendMessage("" + r.nextInt(max) + min).queue();
         }
