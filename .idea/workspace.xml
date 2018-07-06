@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77a69ca5-e3c1-4193-9c83-4089bb52131e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandDice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandSay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/music/CommandPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/music/CommandPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandHelp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommandHelp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="76" column="78" selection-start-line="76" selection-start-column="78" selection-end-line="76" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -60,17 +53,8 @@
       <file leaf-file-name="CommandId.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandPing.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandPing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="3">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -98,11 +82,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandDice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandQuestion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandSay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/ICommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/music/CommandPlay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" />
       </list>
     </option>
   </component>
@@ -258,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530881853293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updating Help Usages format">
+      <created>1530884749569</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530884749569</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -298,7 +289,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Checking what's up with random" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checking what's up with random" />
+    <MESSAGE value="Updating Help Usages format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Help Usages format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,13 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/ICommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -384,6 +369,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandPing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandServers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -391,17 +390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandId.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandPing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="76" column="78" selection-start-line="76" selection-start-column="78" selection-end-line="76" selection-end-column="78" />
         </state>
       </provider>
     </entry>
