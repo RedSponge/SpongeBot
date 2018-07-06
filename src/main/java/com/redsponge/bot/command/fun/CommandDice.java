@@ -46,7 +46,7 @@ public class CommandDice implements ICommand {
         System.out.println("Rolls: " + rolls);
         System.out.println("Randomify: " + r.nextInt(max));
         for(int i = 0; i < rolls; i++) {
-            event.getChannel().sendMessage("" + r.nextInt(max) + min).queue();
+            event.getChannel().sendMessage("" + (r.nextInt(max) + min)).queue();
         }
     }
 
