@@ -3,6 +3,7 @@ package com.redsponge.bot.command;
 import com.redsponge.bot.command.chat.CommandDeleteMessages;
 import com.redsponge.bot.command.fun.CommandQuestion;
 import com.redsponge.bot.command.fun.CommandSay;
+import com.redsponge.bot.command.fun.CommandDice;
 import com.redsponge.bot.command.general.CommandHelp;
 import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
 import com.redsponge.bot.command.general.CommandServers;
