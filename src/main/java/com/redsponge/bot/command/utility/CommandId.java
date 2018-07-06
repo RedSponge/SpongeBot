@@ -39,4 +39,9 @@ public class CommandId implements ICommand {
     public Permission getPermission() {
         return Permission.MOD;
     }
+    
+    @Override
+    public String[] getUsages() {
+        return new String[] {"id", "id [user]"};
+    }
 }
