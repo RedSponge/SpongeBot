@@ -9,7 +9,7 @@ public class CommandSay implements ICommand {
 
     @Override
     public void execute(String[] args, MessageReceivedEvent event) {
-        if(args.length == 0) event.getChannel().sendMessage(">say [WHAT TO SAY]").queue();
+        if(args.length == 0) displayHelp(event);
         if(Permission.DEV.hasPermission(event.getMember(), event.getGuild())) {
             event.getChannel().sendMessage(String.join(" ", args)).queue();
             event.getMessage().delete().queue();
@@ -31,6 +31,11 @@ public class CommandSay implements ICommand {
     @Override
     public CommandCategory getCategory() {
         return CommandCategory.FUN;
+    }
+
+    @Override
+    public String[] getUsages() {
+        return new String[] {"[What to say]"};
     }
 
     @Override

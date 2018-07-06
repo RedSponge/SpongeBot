@@ -47,6 +47,6 @@ public class CommandQuestion implements ICommand {
 
     @Override
     public String[] getUsages() {
-        return new String[] {getName() + " [Question]"};
+        return new String[] {"[Question]"};
     }
 }

@@ -42,6 +42,6 @@ public class CommandId implements ICommand {
     
     @Override
     public String[] getUsages() {
-        return new String[] {"id", "id [user]"};
+        return new String[] {"", "[user]"};
     }
 }

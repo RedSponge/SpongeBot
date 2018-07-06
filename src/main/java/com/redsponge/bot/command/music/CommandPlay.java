@@ -90,4 +90,9 @@ public class CommandPlay implements ICommand {
     public Permission getPermission() {
         return Permission.GOD;
     }
+
+    @Override
+    public boolean showInHelp() {
+        return false;
+    }
 }

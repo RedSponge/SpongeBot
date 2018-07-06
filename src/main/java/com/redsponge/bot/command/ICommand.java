@@ -17,7 +17,7 @@ public interface ICommand {
     String getDescription();
 
     default String[] getUsages() {
-        return new String[] {getName()};
+        return new String[] {""};
     }
 
     CommandCategory getCategory();
@@ -34,6 +34,10 @@ public interface ICommand {
         List<String> ar = new ArrayList<>(Collections.singletonList(getName()));
         ar.addAll(Arrays.asList(getAliases()));
         return ar.toArray(new String[0]);
-    };
+    }
+
+    default void displayHelp(MessageReceivedEvent event) {
+        Commands.CommandHelp.execute(new String[] {getName()}, event);
+    }
 
 }

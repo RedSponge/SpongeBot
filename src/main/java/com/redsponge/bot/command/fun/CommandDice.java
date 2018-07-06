@@ -24,6 +24,7 @@ public class CommandDice implements ICommand {
                 if(rolls < 1) throw new Exception();
             } catch (Exception e) {
                 event.getChannel().sendMessage("Cannot roll " + args[0] + " times!").queue();
+                return;
             }
         }
         if(args.length == 2 || args.length == 3) {
@@ -33,6 +34,7 @@ public class CommandDice implements ICommand {
                 max = Integer.parseInt(args[1+addition]);
             } catch (Exception e) {
                 event.getChannel().sendMessage("Couldn't work with these numbers as min and max!").queue();
+                return;
             }
         }
 
