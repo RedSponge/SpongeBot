@@ -117,7 +117,7 @@ public class CommandHelp implements ICommand {
         public void execute(String[] args, MessageReceivedEvent event) {
             event.getMessage().delete().queue();
             PrivateChannel channel = event.getAuthor().openPrivateChannel().complete();
-            channel.sendMessage("Dude.. it says " + Reference.prefix + "h(elp) because you should use either \"h\" or \"help\"... NOT \"h(elp)\" (also no I'm not adding this as an alias sorry").queue();
+            channel.sendMessage("Dude.. it says " + Reference.prefix + "h(elp) because you should use either \"h\" or \"help\"... NOT \"h(elp)\" (also no I'm not adding this as an alias sorry)").queue();
         }
 
         @Override
