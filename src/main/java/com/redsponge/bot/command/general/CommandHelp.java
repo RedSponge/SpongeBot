@@ -7,6 +7,8 @@ import com.redsponge.bot.command.ICommand;
 import com.redsponge.bot.command.Permission;
 import com.redsponge.bot.util.Reference;
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.entities.PrivateChannel;
+import net.dv8tion.jda.core.entities.VoiceChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.awt.Color;
@@ -22,20 +24,20 @@ public class CommandHelp implements ICommand {
         EmbedBuilder builder = new EmbedBuilder();
         Random r = new Random();
         builder.setColor(new Color(r.nextFloat(), r.nextFloat(), r.nextFloat()));
-        boolean def = false;
-            try {
-                if(SpongeBot.instance.commandManager.getCommandsSorted().get(args[0]) != null) {
-                    buildSpecificCommandHelp(builder, SpongeBot.instance.commandManager.getCommandsSorted().get(args[0]));
-                } else {
-                    CommandCategory c = CommandCategory.valueOfTitle(args[0].toLowerCase());
-                    buildCommandCategoryHelp(builder, c);
-                }
-            } catch (Exception e) {
-                if(e instanceof UnknownCommandException) {
-                    event.getChannel().sendMessage(e.getMessage()).queue();
-                }
-                buildCommandHelp(builder);
+
+        try {
+            if(SpongeBot.instance.commandManager.getCommandsSorted().get(args[0]) != null) {
+                buildSpecificCommandHelp(builder, SpongeBot.instance.commandManager.getCommandsSorted().get(args[0]));
+            } else {
+                CommandCategory c = CommandCategory.valueOfTitle(args[0].toLowerCase());
+                buildCommandCategoryHelp(builder, c);
             }
+        } catch (Exception e) {
+            if(e instanceof UnknownCommandException) {
+                event.getChannel().sendMessage(e.getMessage()).queue();
+            }
+            buildCommandHelp(builder);
+        }
         builder.setFooter("SpongeBot by RedSponge!", null);
         event.getMessage().getChannel().sendMessage(builder.build()).queue();
     }
@@ -114,9 +116,8 @@ public class CommandHelp implements ICommand {
         @Override
         public void execute(String[] args, MessageReceivedEvent event) {
             event.getMessage().delete().queue();
-            event.getAuthor().openPrivateChannel().queue((channel -> {
-                channel.sendMessage("You should use " + Reference.prefix + "h or " + Reference.prefix + "help... not " + Reference.prefix + "h(elp)").queue();
-            }));
+            PrivateChannel channel = event.getAuthor().openPrivateChannel().complete();
+            channel.sendMessage("Dude.. it says " + Reference.prefix + "h(elp) because you should use either \"h\" or \"help\"... NOT \"h(elp)\" (also no I'm not adding this as an alias sorry").queue();
         }
 
         @Override
