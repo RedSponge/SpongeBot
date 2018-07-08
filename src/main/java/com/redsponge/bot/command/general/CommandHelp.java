@@ -20,7 +20,6 @@ public class CommandHelp implements ICommand {
     @Override
     public void execute(String[] args, MessageReceivedEvent event) {
         String[] argsLower = new String[args.length];
-        event.getChannel().sendMessage("MINE").queue();
         EmbedBuilder builder = new EmbedBuilder();
         Random r = new Random();
         builder.setColor(new Color(r.nextFloat(), r.nextFloat(), r.nextFloat()));
