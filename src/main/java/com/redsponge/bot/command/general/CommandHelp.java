@@ -20,7 +20,7 @@ public class CommandHelp implements ICommand {
     @Override
     public void execute(String[] args, MessageReceivedEvent event) {
         String[] argsLower = new String[args.length];
-
+        event.getChannel().sendMessage("MINE").queue();
         EmbedBuilder builder = new EmbedBuilder();
         Random r = new Random();
         builder.setColor(new Color(r.nextFloat(), r.nextFloat(), r.nextFloat()));
@@ -76,7 +76,7 @@ public class CommandHelp implements ICommand {
 
         builder.addField("Name:", command.getName(), false);
         builder.addField("Description: ", command.getDescription(), false);
-        builder.addField("Usage:", "`" + Reference.prefix + command.getName() + String.join(" || " + Reference.prefix + command.getName() + " ",command.getUsages()) + "`", false);
+        builder.addField("Usage:", ("`" + Reference.prefix + command.getName() + (!command.getUsages()[0].trim().equals("")? " ":"") + String.join(" || " + Reference.prefix + command.getName() + " ",command.getUsages()) + "`"), false);
         builder.addField("Aliases: ", String.join(", ", command.formUsages()), false);
 
     }

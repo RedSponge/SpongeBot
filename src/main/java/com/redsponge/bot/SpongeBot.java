@@ -64,6 +64,7 @@ public class SpongeBot {
         jda.addEventListener(new ServerListeners());
     }
 
+
     private void registerCommands() {
         commandManager = new CommandManager();
         commandManager.register(Commands.ALL.toArray(new ICommand[0]));

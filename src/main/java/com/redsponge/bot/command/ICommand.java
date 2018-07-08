@@ -37,7 +37,7 @@ public interface ICommand {
     }
 
     default void displayHelp(MessageReceivedEvent event) {
-        Commands.CommandHelp.execute(new String[] {getName()}, event);
+        Commands.COMMAND_HELP.execute(new String[] {getName()}, event);
     }
 
 }

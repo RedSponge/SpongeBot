@@ -9,6 +9,7 @@ import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
 import com.redsponge.bot.command.general.CommandServers;
 import com.redsponge.bot.command.music.CommandPlay;
 import com.redsponge.bot.command.utility.CommandId;
+import com.redsponge.bot.command.utility.CommandInvite;
 import com.redsponge.bot.command.utility.CommandPing;
 
 import java.lang.reflect.Field;
@@ -17,19 +18,20 @@ import java.util.List;
 
 public class Commands {
 
-    public static final ICommand CommandDeleteMessages = new CommandDeleteMessages();
+    public static final ICommand COMMAND_DELETE_MESSAGES = new CommandDeleteMessages();
 
-    public static final ICommand CommandQuestion = new CommandQuestion();
-    public static final ICommand CommandSay = new CommandSay();
+    public static final ICommand COMMAND_QUESTION = new CommandQuestion();
+    public static final ICommand COMMAND_SAY = new CommandSay();
 
-    public static final ICommand CommandHelp = new CommandHelp();
-    public static final ICommand CommandHelpTroll = new CommandH_elp_();
-    public static final ICommand CommandServers = new CommandServers();
+    public static final ICommand COMMAND_HELP = new CommandHelp();
+    public static final ICommand COMMAND_HELP_TROLL = new CommandH_elp_();
+    public static final ICommand COMMAND_SERVERS = new CommandServers();
 
-    public static final ICommand CommandId = new CommandId();
-    public static final ICommand CommandPing = new CommandPing();
+    public static final ICommand COMMAND_ID = new CommandId();
+    public static final ICommand COMMAND_PING = new CommandPing();
+    public static final ICommand COMMAND_INVITE = new CommandInvite();
     
-    public static final ICommand CommandDice = new CommandDice();
+    public static final ICommand COMMAND_DICE = new CommandDice();
 
     public static final List<ICommand> ALL;
 
