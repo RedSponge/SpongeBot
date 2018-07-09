@@ -17,7 +17,7 @@ public class CommandAvatar implements ICommand {
         String imageURL = getFrom.getAvatarUrl();
         if(imageURL == null) imageURL = getFrom.getDefaultAvatarUrl();
 
-        event.getChannel().sendMessage("Avatar of " + getFrom.getAsMention() + " is: " + imageURL).queue();
+        event.getChannel().sendMessage("Avatar of " + getFrom.getAsMention() + " is: " + imageURL + "?size=2048").queue();
     }
 
     @Override
