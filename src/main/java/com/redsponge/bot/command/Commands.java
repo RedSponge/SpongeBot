@@ -8,6 +8,7 @@ import com.redsponge.bot.command.fun.CommandDice;
 import com.redsponge.bot.command.general.CommandHelp;
 import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
 import com.redsponge.bot.command.general.CommandServers;
+import com.redsponge.bot.command.image.CommandAvatar;
 import com.redsponge.bot.command.music.CommandPlay;
 import com.redsponge.bot.command.utility.CommandId;
 import com.redsponge.bot.command.utility.CommandInvite;
@@ -35,6 +36,8 @@ public class Commands {
     public static final ICommand COMMAND_DICE = new CommandDice();
 
     public static final ICommand COMMAND_FACE = new CommandFace();
+
+    public static final ICommand COMMAND_AVATAR = new CommandAvatar();
 
     public static final List<ICommand> ALL;
 
