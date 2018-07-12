@@ -1,29 +1,35 @@
 package com.redsponge.bot.command.utility;
 
-import com.redsponge.bot.SpongeBot;
 import com.redsponge.bot.command.CommandCategory;
 import com.redsponge.bot.command.ICommand;
 import com.redsponge.bot.command.Permission;
 import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.User;
+import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.awt.*;
-import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalField;
+import java.time.temporal.ChronoUnit;
+
+/**
+ * Ping code snippet taken from jagrosh
+ * view their file at https://github.com/jagrosh/Spectra/blob/master/src/spectra/commands/Ping.java
+ */
 
 public class CommandPing implements ICommand {
 
     private static Color purple = new Color(0xA800FF);
-    private static Color lightblue = new Color(0x00A0FF);
+    private static Color lightBlue = new Color(0x00A0FF);
 
     @Override
     public void execute(String[] args, MessageReceivedEvent event) {
-        long ping = event.getMessage().getCreationTime().getNano()/1000000;
-        EmbedBuilder builder = new EmbedBuilder().setColor(getColor(ping)).addField(":Ping:", Long.toString(ping), true);
-        event.getChannel().sendMessage(builder.build()).queue();
+        String vowel = "aeiou".charAt((int)(Math.random()*5))+"";
+        event.getChannel().sendMessage("P"+vowel+"ng: ...").queue( m -> {
+            if(m!=null) {
+                m.editMessage("P" + vowel + "ng: " + event.getMessage().getCreationTime().until(m.getCreationTime(), ChronoUnit.MILLIS) + "ms").queue();
+            }
+//        EmbedBuilder builder = new EmbedBuilder().setColor(getColor(ping)).addField(":Ping:", Long.toString(ping), true);
+//        event.getChannel().sendMessage(builder.build()).queue();
+    });
     }
 
     private Color getColor(long ping) {
@@ -32,7 +38,7 @@ public class CommandPing implements ICommand {
         if(ping < 200)
             return Color.CYAN;
         if(ping < 400)
-            return lightblue;
+            return lightBlue;
         if(ping < 800)
             return purple;
         if(ping < 10000)
