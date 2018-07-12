@@ -36,7 +36,10 @@ public class CommandManager {
         }
     }
 
-    public void run(MessageReceivedEvent event, Message m, User user, Member member) {
+    public void run(MessageReceivedEvent event) {
+        Message m = event.getMessage();
+        User user = event.getAuthor();
+        Member member = event.getMember();
         String content = m.getContentRaw();
         if(!content.startsWith(Reference.prefix)) return;
         content = content.substring(Reference.prefix.length());

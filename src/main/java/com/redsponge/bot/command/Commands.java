@@ -1,6 +1,7 @@
 package com.redsponge.bot.command;
 
 import com.redsponge.bot.command.chat.CommandDeleteMessages;
+import com.redsponge.bot.command.dev.CommandExecute;
 import com.redsponge.bot.command.fun.CommandFace;
 import com.redsponge.bot.command.fun.CommandQuestion;
 import com.redsponge.bot.command.fun.CommandSay;
@@ -38,6 +39,8 @@ public class Commands {
     public static final ICommand COMMAND_FACE = new CommandFace();
 
     public static final ICommand COMMAND_AVATAR = new CommandAvatar();
+
+    public static final ICommand COMMAND_EXECUTE = new CommandExecute();
 
     public static final List<ICommand> ALL;
 

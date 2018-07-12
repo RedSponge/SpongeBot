@@ -12,7 +12,7 @@ public class OnMessage extends ListenerAdapter {
         if(event.getAuthor().isBot()) return;
         long ping = System.currentTimeMillis();
 
-        SpongeBot.instance.commandManager.run(event, event.getMessage(), event.getAuthor(), event.getMember());
+        SpongeBot.instance.commandManager.run(event);
 
 
     }
