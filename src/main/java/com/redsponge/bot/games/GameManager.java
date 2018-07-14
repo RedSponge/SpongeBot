@@ -48,6 +48,17 @@ public class GameManager {
         }
     }
 
+    public boolean isPlaying(User u) {
+        return playingUsers.contains(u);
+    }
+
+    public void shutdown() {
+        runningGames.forEach(Game::shutdown);
+        playingUsers.clear();
+        runningGames.clear();
+        catalogedUsers.clear();
+    }
+
 
 
 }

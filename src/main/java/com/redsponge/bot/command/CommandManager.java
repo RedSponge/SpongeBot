@@ -75,4 +75,9 @@ public class CommandManager {
     public Map<CommandCategory, List<ICommand>> getCommandCategories() {
         return commandCategories;
     }
+
+    public void shutdown() {
+        commandCategories.clear();
+        commands.clear();
+    }
 }

@@ -40,6 +40,7 @@ public abstract class Game {
     public void end() {
         for (PrivateChannel userChannel : userChannels) {
             userChannel.sendMessage("GAME ENDED!").queue();
+            userChannel.close().queue();
         }
         SpongeBot.instance.gameManager.endGame(this);
     }
@@ -49,4 +50,10 @@ public abstract class Game {
             userChannel.sendMessage(msg).queue();
         }
     }
+
+    public void shutdown() {
+        broadcast("ENDING GAME - BOT SHUTDOWN");
+        end();
+    }
+
 }

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dee0dd6-c984-422b-887f-bac0c3efc835" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/game/CommandTicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameTicTacToe.java" afterDir="false" />
+    <list default="true" id="2dee0dd6-c984-422b-887f-bac0c3efc835" name="Default" comment="Chat in ttt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnShutDown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,39 +21,17 @@
       <file leaf-file-name="SpongeBot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+            <state relative-caret-position="119">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTicTacToe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameTicTacToe.java">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1632">
-              <caret line="137" column="16" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4953#4954#0" expanded="true" />
-                <element signature="e#4995#4996#0" expanded="true" />
-                <element signature="e#5039#5040#0" expanded="true" />
-                <element signature="e#5075#5076#0" expanded="true" />
-                <element signature="e#5116#5117#0" expanded="true" />
-                <element signature="e#5134#5135#0" expanded="true" />
-                <element signature="e#6321#6452#0" expanded="true" />
-                <element signature="e#6451#6452#0" expanded="true" />
-                <element signature="e#8109#8110#0" expanded="true" />
-                <element signature="e#8157#8158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandTicTacToe.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/game/CommandTicTacToe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+            <state relative-caret-position="102">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +39,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reference.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java">
+      <file leaf-file-name="GameManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="28" column="133" selection-start-line="28" selection-start-column="133" selection-end-line="28" selection-end-column="133" />
+            <state relative-caret-position="272">
+              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1564#1565#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +100,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/MalformedCommandException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/fun/CommandFace.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/image/CommandAvatar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/dev/CommandExecute.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/utility/CommandPing.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java" />
@@ -130,12 +107,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/Commands.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameTicTacToe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/game/CommandTicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameTicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnShutDown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java" />
       </list>
     </option>
   </component>
@@ -350,11 +329,26 @@
       <option name="project" value="LOCAL" />
       <updated>1531421684153</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added TicTacToe">
+      <created>1531559226214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531559226214</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Chat in ttt">
+      <created>1531560413472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531560413472</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -365,11 +359,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -418,16 +412,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding an execute commmand" />
     <MESSAGE value="More consistent ping yay" />
-    <option name="LAST_COMMIT_MESSAGE" value="More consistent ping yay" />
+    <MESSAGE value="Added TicTacToe" />
+    <MESSAGE value="Chat in ttt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat in ttt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/role/RoleContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/role/Roles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -572,13 +561,6 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.6.0_376/JDA-3.6.0_376.jar!/net/dv8tion/jda/core/events/message/MessageReceivedEvent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -694,26 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/general/CommandHelp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -760,17 +722,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="258">
+          <caret line="28" column="133" selection-start-line="28" selection-start-column="133" selection-end-line="28" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/game/CommandTicTacToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameTicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="137" column="16" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
+        <state relative-caret-position="-2975">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4953#4954#0" expanded="true" />
@@ -787,19 +759,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/util/Reference.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/event/OnShutDown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="28" column="133" selection-start-line="28" selection-start-column="133" selection-end-line="28" selection-end-column="133" />
+        <state relative-caret-position="187">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/game/CommandTicTacToe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/command/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        <state relative-caret-position="323">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/SpongeBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redsponge/bot/games/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
           </folding>
         </state>
       </provider>
