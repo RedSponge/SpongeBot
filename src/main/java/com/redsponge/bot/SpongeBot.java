@@ -4,6 +4,7 @@ import com.redsponge.bot.command.CommandManager;
 import com.redsponge.bot.command.Commands;
 import com.redsponge.bot.command.ICommand;
 import com.redsponge.bot.event.OnMessage;
+import com.redsponge.bot.event.OnShutDown;
 import com.redsponge.bot.event.ServerListeners;
 import com.redsponge.bot.games.GameManager;
 import com.redsponge.bot.role.Roles;
@@ -58,6 +59,7 @@ public class SpongeBot {
     private void registerEvents(JDABuilder jda) {
         jda.addEventListener(new OnMessage());
         jda.addEventListener(new ServerListeners());
+        jda.addEventListener(new OnShutDown());
     }
 
 
