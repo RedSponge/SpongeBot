@@ -6,6 +6,7 @@ import com.redsponge.bot.command.fun.CommandFace;
 import com.redsponge.bot.command.fun.CommandQuestion;
 import com.redsponge.bot.command.fun.CommandSay;
 import com.redsponge.bot.command.fun.CommandDice;
+import com.redsponge.bot.command.game.CommandTicTacToe;
 import com.redsponge.bot.command.general.CommandHelp;
 import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
 import com.redsponge.bot.command.general.CommandServers;
@@ -41,6 +42,8 @@ public class Commands {
     public static final ICommand COMMAND_AVATAR = new CommandAvatar();
 
     public static final ICommand COMMAND_EXECUTE = new CommandExecute();
+
+    public static final ICommand COMMAND_TICTACTOE = new CommandTicTacToe();
 
     public static final List<ICommand> ALL;
 

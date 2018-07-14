@@ -2,6 +2,7 @@ package com.redsponge.bot.util;
 
 import com.redsponge.bot.SpongeBot;
 import com.redsponge.bot.command.general.CommandHelp;
+import net.dv8tion.jda.core.OnlineStatus;
 
 import java.awt.Color;
 import java.util.Arrays;
@@ -14,7 +15,7 @@ public class Reference {
 
     public static final String TOKEN = System.getenv("TOKEN");
 
-    public static final List<String> whitelisted = Arrays.asList("263995600641589248", "244111430956089344");
+    public static final List<String> whitelisted = Arrays.asList("263995600641589248", "244111430956089344", "338761258075422721", "199158557705371648");
 
     public static final Color BOT_COLOR = new Color(0xFFA500);
 
@@ -24,4 +25,6 @@ public class Reference {
     public static final String ROLE_DEV = "spongebot_dev";
 
     public static final String PLAYING = prefix + "h(elp)";
+
+    public static final List<OnlineStatus> CAN_BE_INVITED_TO_GAMES = Arrays.asList(OnlineStatus.ONLINE, OnlineStatus.DO_NOT_DISTURB);
 }

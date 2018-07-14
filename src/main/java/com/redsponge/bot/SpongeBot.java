@@ -3,26 +3,18 @@ package com.redsponge.bot;
 import com.redsponge.bot.command.CommandManager;
 import com.redsponge.bot.command.Commands;
 import com.redsponge.bot.command.ICommand;
-import com.redsponge.bot.command.chat.CommandDeleteMessages;
-import com.redsponge.bot.command.fun.CommandQuestion;
-import com.redsponge.bot.command.fun.CommandSay;
-import com.redsponge.bot.command.general.CommandHelp;
-import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
-import com.redsponge.bot.command.general.CommandServers;
-import com.redsponge.bot.command.utility.CommandId;
-import com.redsponge.bot.command.utility.CommandPing;
 import com.redsponge.bot.event.OnMessage;
 import com.redsponge.bot.event.ServerListeners;
-import com.redsponge.bot.role.RoleContainer;
+import com.redsponge.bot.games.GameManager;
 import com.redsponge.bot.role.Roles;
 import com.redsponge.bot.util.Reference;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
-import com.sedmelluq.discord.lavaplayer.source.AudioSourceManager;
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
+import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.entities.Game.GameType;
 import net.dv8tion.jda.core.entities.Guild;
@@ -34,6 +26,7 @@ public class SpongeBot {
     public JDA jda;
     public CommandManager commandManager;
     public AudioPlayerManager audioPlayerManager;
+    public GameManager gameManager;
 
     public static SpongeBot instance;
 
@@ -48,6 +41,9 @@ public class SpongeBot {
 
             registerCommands();
             registerEvents(builder);
+            gameManager = new GameManager();
+
+            builder.setStatus(OnlineStatus.ONLINE);
 
             jda = builder.buildBlocking();
 
