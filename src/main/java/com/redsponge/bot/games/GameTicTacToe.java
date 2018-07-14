@@ -4,6 +4,7 @@ import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
 
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -66,6 +67,14 @@ public class GameTicTacToe extends Game {
 
     @Override
     public boolean playerInput(int player, PrivateMessageReceivedEvent event) {
+        if(event.getMessage().getContentRaw().split(" ")[0].equals("chat")) {
+            String[] toSend = event.getMessage().getContentRaw().split(" ");
+            toSend = Arrays.copyOfRange(toSend, 1, toSend.length);
+            String s = String.join(" ", toSend);
+            if(s.trim().length() > 0)
+                userChannels[1-player].sendMessage("The Other Player Says: " + s).queue();
+            return false;
+        }
         if(!gameRunning) {
             if(!respondedForRematch[player]) {
                 String content = event.getMessage().getContentRaw().toLowerCase();
@@ -87,6 +96,11 @@ public class GameTicTacToe extends Game {
             return true;
         }
         try {
+            if(event.getMessage().getContentRaw().startsWith("end")) {
+                broadcast("GAME ENDED BY PLAYER " + (player + 1));
+                end();
+                return false;
+            }
             if (currentTurn == player) {
                 int num = Integer.parseInt(event.getMessage().getContentRaw().split(" ")[0])-1;
                 if(num < 0 || num >= 9) return false;
@@ -170,16 +184,20 @@ public class GameTicTacToe extends Game {
         for(int i = 0; i < 3; i++) {
             if(board[i][0].equals(board[i][1]) && board[i][1].equals(board[i][2]) && !board[i][0].equals(NONE_MARK)) {
                 announceVictory(board[i][0], asId(i, 0), asId(i, 1), asId(i, 2));
+                return;
             }
             if(board[0][i].equals(board[1][i]) && board[1][i].equals(board[2][i]) && !board[0][i].equals(NONE_MARK)) {
                 announceVictory(board[0][i], asId(0, i), asId(1, i), asId(2, i));
+                return;
             }
         }
         if(board[0][0].equals(board[1][1]) && board[1][1].equals(board[2][2]) && !board[0][0].equals(NONE_MARK)) {
             announceVictory(board[1][1], asId(0, 0), asId(1, 1), asId(2, 2));
+            return;
         }
         if(board[0][2].equals(board[1][1]) && board[1][1].equals(board[2][0]) && !board[0][2].equals(NONE_MARK)) {
             announceVictory(board[1][1], asId(0, 2), asId(1, 1), asId(2, 0));
+            return;
         }
         boolean full = true;
         for(String[] row : board) {
@@ -188,7 +206,7 @@ public class GameTicTacToe extends Game {
             }
         }
         if(full) {
-            announceVictory(null, 0, 0, 0);
+            announceVictory(null);
         }
     }
 
