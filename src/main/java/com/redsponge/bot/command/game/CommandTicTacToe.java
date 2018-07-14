@@ -25,7 +25,7 @@ public class CommandTicTacToe implements ICommand {
     @Override
     public void execute(String[] args, MessageReceivedEvent event) {
         if(args.length < 2) {
-            //displayHelp(event);
+            displayHelp(event);
             return;
         }
         if(args[0].equals("invite")) {
@@ -79,8 +79,18 @@ public class CommandTicTacToe implements ICommand {
     }
 
     @Override
+    public String[] getAliases() {
+        return new String[] {"ttt", "xmd"};
+    }
+
+    @Override
+    public String[] getUsages() {
+        return new String[] {"invite [someone]", "accept [from]"};
+    }
+
+    @Override
     public Permission getPermission() {
-        return Permission.ADMIN;
+        return Permission.USER;
     }
 
     private boolean isMention(Message m, String s, int position) {
