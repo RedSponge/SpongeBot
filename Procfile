@@ -1,1 +1,1 @@
-web: java -jar target/SpongeBot-1.0.jar
+worker: java -jar target/SpongeBot-1.0.jar

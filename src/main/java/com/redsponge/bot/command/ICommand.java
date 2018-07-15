@@ -1,5 +1,6 @@
 package com.redsponge.bot.command;
 
+import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.util.ArrayList;
@@ -38,6 +39,10 @@ public interface ICommand {
 
     default void displayHelp(MessageReceivedEvent event) {
         Commands.COMMAND_HELP.execute(new String[] {getName()}, event);
+    }
+
+    default void reply(MessageReceivedEvent event, String s) {
+        event.getChannel().sendMessage(event.getAuthor().getAsMention() + ", " + s).queue();
     }
 
 }
