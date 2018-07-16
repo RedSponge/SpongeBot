@@ -17,6 +17,8 @@ public abstract class Game {
         for(int i = 0; i < userChannels.length; i++) {
             userChannels[i] = players[i].openPrivateChannel().complete();
         }
+        init();
+        render();
     }
 
     public User[] getPlayers() {
@@ -32,6 +34,8 @@ public abstract class Game {
                 }
         }
     }
+
+    public abstract void init();
 
     public abstract boolean playerInput(int player, PrivateMessageReceivedEvent event);
 

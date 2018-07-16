@@ -29,17 +29,13 @@ public class GameTicTacToe extends Game {
 
     public GameTicTacToe(User... players) {
         super(players);
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < 50; i++) {
-            sb.append("\n");
-        }
-        sb.append("====================================");
-        spacing = sb.toString();
-        t = new Timer();
-        init();
     }
 
-    private void init() {
+    @Override
+    public void init() {
+        spacing = "==============";
+        t = new Timer();
+
         boards = new Message[players.length];
         for(int i = 0; i < boards.length; i++) {
             userChannels[i].sendMessage(spacing).queue();
