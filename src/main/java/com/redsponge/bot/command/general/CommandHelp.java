@@ -45,7 +45,7 @@ public class CommandHelp implements ICommand {
         builder.setTitle("__\"help [category]\" or \"help [command]\" for more info__");
         for(CommandCategory c : CommandCategory.values()) {
             if(!c.displayInHelp()) continue;
-            StringJoiner joiner = new StringJoiner(", ");
+            StringJoiner joiner = new StringJoiner("\n");
 
             for(ICommand command : SpongeBot.instance.commandManager.getCommandCategories().get(c)) {
                 if(command.showInHelp())
