@@ -7,6 +7,7 @@ import com.redsponge.bot.command.fun.CommandQuestion;
 import com.redsponge.bot.command.fun.CommandSay;
 import com.redsponge.bot.command.fun.CommandDice;
 import com.redsponge.bot.command.game.CommandRockPaperScissors;
+import com.redsponge.bot.command.game.CommandTAKI;
 import com.redsponge.bot.command.game.CommandTicTacToe;
 import com.redsponge.bot.command.general.CommandHelp;
 import com.redsponge.bot.command.general.CommandHelp.CommandH_elp_;
@@ -45,8 +46,8 @@ public class Commands {
     public static final ICommand COMMAND_EXECUTE = new CommandExecute();
 
     public static final ICommand COMMAND_TICTACTOE = new CommandTicTacToe();
-
     public static final ICommand COMMAND_ROCK_PAPER_SCISSORS = new CommandRockPaperScissors();
+    public static final ICommand COMMAND_TAKI = new CommandTAKI();
 
     public static final List<ICommand> ALL;
 

@@ -6,10 +6,14 @@ import net.dv8tion.jda.core.entities.PrivateChannel;
 import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public abstract class Game {
 
     protected User[] players;
     protected PrivateChannel[] userChannels;
+    protected static final Timer timer = new Timer();
 
     public Game(User... players) {
         this.players = players;
@@ -58,6 +62,17 @@ public abstract class Game {
     public void shutdown() {
         broadcast("ENDING GAME - BOT SHUTDOWN");
         end();
+    }
+
+    protected void tempMsg(int player, String message, int timeout) {
+        userChannels[player].sendMessage(message).queue(
+                m -> timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        m.delete().queue();
+                    }
+                }, timeout)
+        );
     }
 
 }
