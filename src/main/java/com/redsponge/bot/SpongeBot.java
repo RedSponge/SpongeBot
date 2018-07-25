@@ -31,9 +31,9 @@ public class SpongeBot {
 
     public static SpongeBot instance;
 
-    public SpongeBot() {
+    public SpongeBot(boolean heroku) {
         instance = this;
-        HerokuServerHandler.createHandler();
+        if(heroku) HerokuServerHandler.createHandler();
         try {
             JDABuilder builder = new JDABuilder(AccountType.BOT).setToken(Reference.TOKEN);
 
@@ -46,7 +46,7 @@ public class SpongeBot {
 
             jda = builder.buildBlocking();
 
-            jda.getPresence().setGame(Game.of(GameType.STREAMING, "Test"));
+            jda.getPresence().setGame(Game.of(GameType.WATCHING, Reference.PLAYING));
             registerRoles();
         } catch (LoginException|InterruptedException e) {
             System.err.println("Couldn't connect!");
@@ -73,7 +73,7 @@ public class SpongeBot {
     }
 
     public static void main(String[] args) {
-        new SpongeBot();
+        new SpongeBot(args.length > 0 && args[0].equals("heroku"));
     }
 
 }

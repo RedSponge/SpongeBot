@@ -5,15 +5,7 @@ import net.dv8tion.jda.core.entities.PrivateChannel;
 import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
 
-import javax.smartcardio.Card;
-import java.awt.DefaultKeyboardFocusManager;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 public class GameTAKI extends Game {
 
@@ -21,6 +13,8 @@ public class GameTAKI extends Game {
     private Deck[] playerDecks;
     private int currentTurn;
     private TAKICard currentCard;
+    static boolean runningPlusTwo;
+
 
     public GameTAKI(User... players) {
         super(players);
@@ -95,7 +89,11 @@ public class GameTAKI extends Game {
             message.append("\n\nTheir Number Of Cards: ").append(playerDecks[1-i].getCards().size());
             if(playerDecks[1-i].size() == 1)
                 message.append("\n**THE OTHER PLAYER HAS 1 CARD!**");
-            if(currentTurn == i) message.append("\n\nIt is your turn");
+
+            if(currentTurn == i) {
+                if(runningPlusTwo) message.append("**YOU HAVE TO PUT A TWO OR TAKECARD!**");
+                message.append("\n\nIt is your turn");
+            }
             channel.sendMessage(message.toString()).queue();
         }
     }
@@ -121,7 +119,7 @@ class TAKICard {
     private CardColor color;
     private int number;
 
-    private TAKICard(CardColor color, int number) {
+    TAKICard(CardColor color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -135,6 +133,8 @@ class TAKICard {
     }
 
     static TAKICard generateRandomCard() {
+        int id = RANDOM.nextInt(9)+1;
+        if(TAKICardSpecial.containsId(id)) return null;
         return new TAKICard(CardColor.random(), RANDOM.nextInt(9)+1);
     }
 
@@ -149,6 +149,43 @@ class TAKICard {
         static CardColor random() {
             return VALUES.get(RANDOM.nextInt(SIZE));
         }
+    }
+}
+
+abstract class TAKICardSpecial extends TAKICard {
+
+    private static int[] ids = {2};
+    private static HashMap<Integer, TAKICardSpecial> specialCards;
+
+    static {
+        specialCards = new HashMap<>();
+        specialCards.put(2, new TAKICardSpecial() {
+            @Override
+            int getId() {
+                return 2;
+            }
+
+            @Override
+            void trigger() {
+                GameTAKI.runningPlusTwo = true;
+            }
+        });
+
+    }
+
+    public TAKICardSpecial() {
+        super(CardColor.RED, -1);
+    }
+
+    abstract int getId();
+
+    abstract void trigger();
+
+    static boolean containsId(int id) {
+        for (int i : ids) {
+            if (i == id) return true;
+        }
+        return false;
     }
 }
 

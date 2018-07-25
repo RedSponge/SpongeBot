@@ -3,7 +3,13 @@ package com.redsponge.bot.command.image;
 import com.redsponge.bot.command.CommandCategory;
 import com.redsponge.bot.command.ICommand;
 import com.redsponge.bot.command.Permission;
+import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.MessageBuilder;
+import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.User;
+import net.dv8tion.jda.core.entities.impl.EmoteImpl;
+import net.dv8tion.jda.core.entities.impl.JDAImpl;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 public class CommandAvatar implements ICommand {
@@ -17,7 +23,11 @@ public class CommandAvatar implements ICommand {
         String imageURL = getFrom.getAvatarUrl();
         if(imageURL == null) imageURL = getFrom.getDefaultAvatarUrl();
 
-        event.getChannel().sendMessage("Avatar of " + getFrom.getAsMention() + " is: " + imageURL + "?size=2048").queue();
+        EmbedBuilder mb = new EmbedBuilder();
+        mb.setImage(imageURL + "?size=2048");
+
+        Message m = new MessageBuilder().append("Avatar of ").append(getFrom.getAsMention()).append(" is: ").setEmbed(mb.build()).build();
+        event.getChannel().sendMessage(m).queue();
     }
 
     @Override
