@@ -44,11 +44,9 @@ public class SpongeBot {
             registerEvents(builder);
             gameManager = new GameManager();
 
-            builder.setStatus(OnlineStatus.ONLINE);
-
             jda = builder.buildBlocking();
 
-            jda.getPresence().setGame(Game.of(GameType.WATCHING, Reference.PLAYING));
+            jda.getPresence().setGame(Game.of(GameType.STREAMING, "Test"));
             registerRoles();
         } catch (LoginException|InterruptedException e) {
             System.err.println("Couldn't connect!");
