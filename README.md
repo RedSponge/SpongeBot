@@ -3,7 +3,6 @@ A Discord Bot I Made For Fun!
 
 ## Features
 
-
 #### Utility Functions such as:
 `id` - get player id!
 
