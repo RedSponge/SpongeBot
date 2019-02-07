@@ -15,7 +15,7 @@ public class Reference {
 
     public static final String TOKEN = System.getenv("TOKEN");
 
-    public static final List<String> whitelisted = Arrays.asList("263995600641589248", "244111430956089344", "338761258075422721", "199158557705371648");
+    public static final List<String> whitelisted = Arrays.asList("263995600641589248", "244111430956089344", "338761258075422721", "199158557705371648", "273550233814695936");
 
     public static final Color BOT_COLOR = new Color(0xFFA500);
 
