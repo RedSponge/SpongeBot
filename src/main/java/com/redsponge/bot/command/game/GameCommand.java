@@ -5,7 +5,6 @@ import com.redsponge.bot.command.CommandCategory;
 import com.redsponge.bot.command.ICommand;
 import com.redsponge.bot.games.Game;
 import com.redsponge.bot.util.Reference;
-import net.dv8tion.jda.core.entities.Channel;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.User;
@@ -14,7 +13,6 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.stream.Stream;
 
 public abstract class GameCommand implements ICommand {
 
@@ -99,9 +97,16 @@ public abstract class GameCommand implements ICommand {
         return !invitations.keySet().contains(m);
     }
 
+    private String normalizeMention(String s) {
+        return s.replaceAll("!", "");
+    }
+
     private boolean isMention(String s, Message m, int position) {
         try {
-            return s.equals(m.getMentionedMembers().get(position).getAsMention());
+            String a = normalizeMention(s);
+            String b = normalizeMention(m.getMentionedMembers().get(position).getAsMention());
+            System.out.println(a + " " + b);
+            return a.equals(b);
         } catch (IndexOutOfBoundsException e) {
             return false;
         }
